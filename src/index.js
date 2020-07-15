@@ -1,15 +1,11 @@
-import _ from 'lodash';
-import printMe from './print.js';
+import {name,lastName} from './myname';
 
 const component = () => {
-  const sectionDiv = document.createElement('div');
-  const btn = document.createElement('button');
-  sectionDiv.innerHTML = _.join(['Hello', 'webpack'], ' ');
-  btn.innerHTML = 'Click me and check the console';
-  btn.onclick = printMe;
-  sectionDiv.append(btn);
+  var element = document.createElement('div');
 
-  return sectionDiv;
+  // use your function!
+  element.innerHTML = `Hi! My full name is ${name('Cody')} ${lastName('Lans')}`;
+  return element;
 };
 
 document.body.appendChild(component());
