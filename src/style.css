@@ -8,6 +8,6 @@
 .hello {
   color: red;
   font-family: 'handwritting';
-  font-size: 30px;
+  font-size: 2em;
   background: url('./icon.jpg');
 }

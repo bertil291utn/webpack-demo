@@ -1,6 +1,8 @@
 import _ from 'lodash';
 import './style.css';
 import Icon from './icon.jpg';
+import Data from './data.xml';
+import Datajson from './cars.json';
 
 function component() {
   const element = document.createElement('div');
@@ -13,6 +15,8 @@ function component() {
   myIcon.src = Icon;
 
   element.appendChild(myIcon);
+  console.log(Data);
+  console.log(Datajson);
 
   return element;
 }
